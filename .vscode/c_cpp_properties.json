@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "CSES",
+            "compilerPath": "/home/asokolov5924/.local/share/swiftly/bin/clang++",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "linux-clang-x64",
+            "includePath": [
+                "${workspaceFolder}/src"
+            ]
+        }
+    ],
+    "version": 4
+}

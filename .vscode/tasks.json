@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run solution (input.txt)",
+            "type": "process",
+            "command": "${workspaceFolder}/cses",
+            "args": ["run", "${file}"],
+            "group": { "kind": "build", "isDefault": true },
+            "presentation": { "reveal": "always", "panel": "shared", "clear": true },
+            "problemMatcher": ["$gcc", "$rustc"]
+        },
+        {
+            "label": "Test solution (samples)",
+            "type": "process",
+            "command": "${workspaceFolder}/cses",
+            "args": ["test", "${file}"],
+            "group": { "kind": "test", "isDefault": true },
+            "presentation": { "reveal": "always", "panel": "shared", "clear": true },
+            "problemMatcher": ["$gcc", "$rustc"]
+        },
+        {
+            "label": "Test both languages (samples)",
+            "type": "process",
+            "command": "${workspaceFolder}/cses",
+            "args": ["test", "${fileDirname}"],
+            "group": "test",
+            "presentation": { "reveal": "always", "panel": "shared", "clear": true },
+            "problemMatcher": ["$gcc", "$rustc"]
+        },
+        {
+            "label": "Debug-test solution (sanitizers / overflow checks)",
+            "type": "process",
+            "command": "${workspaceFolder}/cses",
+            "args": ["test", "${file}", "--debug"],
+            "group": "test",
+            "presentation": { "reveal": "always", "panel": "shared", "clear": true },
+            "problemMatcher": ["$gcc", "$rustc"]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+[package]
+name = "cses"
+version = "0.1.0"
+# Matches ./cses, which compiles submissions with --edition=2021 like the judge.
+edition = "2021"
+
+[dependencies]
